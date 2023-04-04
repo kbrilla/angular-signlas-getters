@@ -1,0 +1,9 @@
+<p *ngIf="nullableSignal()">{{nullableSignal()}} / string or null</p>
+<p *ngIf="nullableSignalValue">{{nullableSignalValue}} //string !!!</p>
+
+<p *ngIf="moreComplexSignal().hasValue">
+  {{moreComplexSignal().value}} //string | undefined
+</p>
+<p *ngIf="moreComplexSignalValue.hasValue">
+  {{moreComplexSignalValue.value}} //string !!!
+</p>
